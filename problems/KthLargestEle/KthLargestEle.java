@@ -10,11 +10,11 @@ public class KthLargestEle {
 
         for (int num : nums) {
             minHeap.offer(num);
-            if (minHeap.size() > k) // If heap size exceeds K, remove the smallest element
+            if (minHeap.size() > k)
                 minHeap.poll();
         }
 
-        return minHeap.peek(); // The root of the heap will be the Kth largest element
+        return minHeap.peek(); 
     }
 
     public static void main(String[] args) {
